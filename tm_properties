@@ -1,0 +1,150 @@
+# theme    = '766026CB-703D-4610-B070-8DE07D967C5F'
+fontSize = 12
+fontName = "Fira Code"
+encoding = "UTF-8"
+showInvisibles = true
+fileChooserGlob = "{,.}*"
+
+# Don't show scm status in the filebrowser
+scmStatus = true
+
+exclude                     = "{.DS_Store,.sass-cache,vendor/bundle/*,$exclude}"
+excludeFolders              = "{.git,.bundle,tmp,log}"
+excludeInFolderSearch       = "{$excludeInFolderSearch,$exclude,log,tmp,*.{pdf,ppt,jpg,gif,mov,avi,mp4,f4v,flv,log,app,sql*},__*,vcr_cassettes}"
+fileChooserGlob             = "{,.}*"
+include                     = "{*,.tm_properties,.htaccess,.r*,.git?*,.travis*,.pow*,.env}"
+includeInFileChooser        = "{,.?*}"
+excludeInFileChooser        = "{$excludeInFolderSearch,$excludeFolders,$exclude,$excludeFiles,$excludeInFileChooser,tmp,log,build}"
+
+includeFiles = "{$includeFiles,.env.*,.spectator*}"
+
+windowTitleSCM     = '${TM_SCM_BRANCH:+ ($TM_SCM_NAME: $TM_SCM_BRANCH)}'
+windowTitleProject = '${projectDirectory:+ — ${projectDirectory/^.*\///}}'
+windowTitle        = '$TM_DISPLAYNAME$windowTitleProject$windowTitleSCM'
+
+LANG                 = "en_US.UTF-8"
+LC_CTYPE             = "en_US.UTF-8"
+TM_APP_PATH          = "${CWD/\/Contents\/Resources$//}"
+TM_MATE              = "$CWD/mate"
+MATEFLAGS            = "--no-recent"
+TM_QUERY             = "$CWD/tm_query"
+TM_SCM_COMMIT_WINDOW = "$CWD/commit"
+TM_GIT = "/usr/local/bin/git"
+TM_ORGANIZATION_NAME = '688.io'
+TM_TODO_IGNORE       = '/(build|CxxTest|PlugIns|vendor)/|\.(md|html)$'
+TM_RUBY = '$HOME/.rbenv/shims/ruby'
+
+[ attr.untitled ]
+fileType         = text.plain
+
+[ text ]
+softWrap         = true
+
+[ text.git-commit ]
+spellChecking    = true
+spellingLanguage = 'en'
+
+[ source.abnf ]
+lineEndings      = "\r\n"
+
+[ source.ruby ]
+softTabs         = true
+tabSize          = 2
+
+[ source.python ]
+softTabs         = true
+tabSize          = 4
+
+[ source.makefile ]
+softTabs         = false
+
+[ source.ninja ]
+softTabs         = true
+
+[ "/System/Library/Frameworks/**/Headers/**" ]
+encoding         = "MACROMAN"
+tabSize          = 8
+
+[ "hg-editor-*.txt" ]
+fileType         = "text.hg-commit"
+
+[ *.go ]
+relatedFilePath  = "${TM_FILEPATH/(?=\.go$)/_test/}"
+
+[ *_test.go ]
+relatedFilePath  = "${TM_FILEPATH/_test(?=\.go$)//}"
+
+[ "*.js.erb" ]
+fileType                    = source.js
+
+[ "*.conf.erb" ]
+fileType                    = source.apache-config
+
+[ "*.rb.erb" ]
+fileType                    = source.ruby
+
+[ "*.coffee.erb" ]
+fileType                    = source.coffee
+
+[ "*_{shared,spec}{,.js}.{rb,opal}" ]
+fileType                    = source.ruby.rspec
+
+[ "spec/shared/*.rb" ]
+fileType = source.ruby.rspec
+
+[text.haml]
+spellChecking               = false
+
+
+# RAILS
+
+[ "*_controller{,_decorator}.rb" ]
+fileType                    = source.ruby.rails
+
+[ "app/{models,controllers,helpers}/*.rb" ]
+fileType                    = source.ruby.rails
+
+
+# RUBY
+
+[ *.html.{arb,arbre} ]
+fileType         = source.ruby
+
+[ *.js.{opal,rb} ]
+fileType         = source.ruby.opal
+
+[ *.{,json.}{jbuilder,rabl} ]
+fileType         = source.ruby
+
+[ *.rb.{orig,rb__} ]
+fileType         = source.ruby
+
+[ spec/**/*.rb, *_spec.rb ]
+fileType         = source.ruby.rspec
+
+[ *.watchr ]
+fileType         = source.ruby
+
+[ {Appraisals,Capfile,Guardfile,Rakefile} ]
+fileType         = source.ruby
+
+# WIP
+
+[ attr.untitled ]
+fileType         = source.ruby
+
+[ buffalo-watcher ]
+fileType         = source.ruby
+
+
+[ deploy-alpha ]
+fileType         = source.ruby
+
+[ opal-mspec ]
+fileType         = source.ruby
+
+[ bin/setup ]
+fileType         = source.ruby
+
+[ spectator ]
+fileType         = source.ruby
