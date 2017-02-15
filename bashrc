@@ -1,1 +1,0 @@
-/Users/pengfeixing/Library/Mobile Documents/com~apple~CloudDocs/Mackup/.bashrc
