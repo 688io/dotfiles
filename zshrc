@@ -142,4 +142,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
+# Tmuxinator completion
+source ~/.bin/tmuxinator.zsh
+
 . /usr/local/etc/profile.d/z.sh
