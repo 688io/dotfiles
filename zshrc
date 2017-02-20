@@ -64,7 +64,8 @@ plugins=(git rake rails docker vagrant npm node)
 
 # User configuration
 
-export PATH="$PATH:/usr/local/sbin:$HOME/.pyenv/shims:$HOME/bin/apache-maven-3.3.3/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/.composer/vendor/bin:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:/usr/local/opt/go/libexec/bin:/opt/vagrant/bin:$HOME/bin/FDK/Tools/osx:/Applications/Postgres.app/Contents/Versions/latest/bin"
+# export PATH="/Applications/Postgres.app/Contents/Versions/latest/bin:$PATH"
+export PATH="$PATH:/usr/local/sbin:$HOME/.pyenv/shims:$HOME/bin/apache-maven-3.3.3/bin:/usr/local/share/npm/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:$HOME/.composer/vendor/bin:$HOME/Library/Android/sdk/platform-tools:$HOME/Library/Android/sdk/tools:/usr/local/opt/go/libexec/bin:/opt/vagrant/bin:$HOME/bin/FDK/Tools/osx"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 source $ZSH/oh-my-zsh.sh
