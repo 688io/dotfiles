@@ -147,3 +147,5 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 source ~/.bin/tmuxinator.zsh
 
 . /usr/local/etc/profile.d/z.sh
+
+export PATH="/usr/local/opt/qt5/bin:$PATH"
