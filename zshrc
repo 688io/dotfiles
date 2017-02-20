@@ -143,3 +143,5 @@ export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
 source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 . /usr/local/etc/profile.d/z.sh
+
+export PATH="/usr/local/opt/qt5/bin:$PATH"
