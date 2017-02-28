@@ -140,8 +140,8 @@ compresspdf() {
 }
 
 export WORKON_HOME=$HOME/.virtualenvs
-export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
-source /usr/local/bin/virtualenvwrapper_lazy.sh
+# export VIRTUALENVWRAPPER_SCRIPT=/usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper_lazy.sh
 
 # Tmuxinator completion
 source ~/.bin/tmuxinator.zsh
@@ -149,6 +149,9 @@ source ~/.bin/tmuxinator.zsh
 . /usr/local/etc/profile.d/z.sh
 
 export PATH="/usr/local/opt/qt5/bin:$PATH"
+
+# Overcommit for all repositories
+export GIT_TEMPLATE_DIR=`overcommit --template-dir`
 
 # Linker project
 export EC2_IDENTITY_FILE="/Users/pengfeixing/.ssh/EC2-docker-linker.pem"
