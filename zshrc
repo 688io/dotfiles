@@ -10,12 +10,12 @@ export ZSH=$HOME/.oh-my-zsh
 # ZSH_THEME="jreese"
 # ZSH_THEME="sorin"
 # ZSH_THEME="bira" # shows ruby version
-ZSH_THEME="sammy"
+# ZSH_THEME="sammy"
 # ZSH_THEME="sporty_256"
 # ZSH_THEME="pure"
 # ZSH_THEME="fwalch"
 # ZSH_THEME="jbergantine"
-# ZSH_THEME="jnrowe"
+ZSH_THEME="jnrowe"
 # ZSH_THEME="random"
 
 # Uncomment the following line to use case-sensitive completion.
@@ -107,7 +107,7 @@ if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export ANDROID_HOME=$HOME/Library/Android/sdk
-export JAVA_HOME=/usr/libexec/java_home
+export JAVA_HOME=$(/usr/libexec/java_home)
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
@@ -149,3 +149,7 @@ source ~/.bin/tmuxinator.zsh
 . /usr/local/etc/profile.d/z.sh
 
 export PATH="/usr/local/opt/qt5/bin:$PATH"
+
+# Linker project
+export EC2_IDENTITY_FILE="/Users/pengfeixing/.ssh/EC2-docker-linker.pem"
+export EC2_HOST=52.39.224.142
